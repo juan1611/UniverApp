@@ -14,7 +14,8 @@ app.config( function($routeProvider){
 			controller: 'alumnosCtrl'
 		})
 		.when('/alumno/:codigo',{
-			//Cuando la ruta sea así /ruta/:parametro
+			//Entonces ese parámetro va a la URL
+			//Cuando la ruta sea así /ruta/:parametro:parametro2
 			//Después de los dos puntos es uel nombre de un parámetro
 			templateUrl: 'parciales/alumno.html',
 			controller: 'alumnoCtrl'
@@ -22,6 +23,5 @@ app.config( function($routeProvider){
 		.otherwise({
 			redirectTo: '/'
 		});
-
 
 });
